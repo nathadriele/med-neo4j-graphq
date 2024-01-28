@@ -66,8 +66,7 @@ const driver = neo4j.driver(
   neo4j.auth.basic(NEO4J_USERNAME, NEO4J_PASSWORD)
 );
 
-// Type definitions and a Neo4j driver instance are all that's required for
-// building a GraphQL API with the Neo4j GraphQL Library - no resolvers!
+// Type definitions and a Neo4j driver instance are all that's required for building a GraphQL API with the Neo4j GraphQL Library - no resolvers!
 const neoSchema = new Neo4jGraphQL({
   typeDefs,
   driver,
